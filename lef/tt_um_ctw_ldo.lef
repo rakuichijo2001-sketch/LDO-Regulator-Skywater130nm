@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_LDO23t4
+MACRO tt_um_ctw_ldo
   CLASS BLOCK ;
-  FOREIGN tt_um_LDO23t4 ;
+  FOREIGN tt_um_ctw_ldo ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 225.760 ;
   PIN clk
