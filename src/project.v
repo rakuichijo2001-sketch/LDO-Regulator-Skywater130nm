@@ -1,14 +1,6 @@
-/*
- * Copyright (c) 2024 Your Name
- * SPDX-License-Identifier: Apache-2.0
- */
-
 `default_nettype none
 
-module tt_um_ctw_ldo.v (
-    input  wire       VGND,
-    input  wire       VDPWR,    // 1.8v power supply
-//    input  wire       VAPWR,    // 3.3v power supply
+module tt_um_ctw_ldo (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
@@ -19,5 +11,10 @@ module tt_um_ctw_ldo.v (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
+
+    // Kéo các chân Digital xuống 0 để tránh lỗi Floating
+    assign uo_out  = 8'b00000000;
+    assign uio_out = 8'b00000000;
+    assign uio_oe  = 8'b00000000;
 
 endmodule
