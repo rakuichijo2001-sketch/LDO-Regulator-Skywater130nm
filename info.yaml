@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "LDO"      # Project title
-  author:       "TuanKiet"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "analog LDO"      # One line description of what your project does
+  title:        "LDO Regulator Skywater 130nm"      # Project title
+  author:       "Engineer of CTW"      # Your name
+  discord:      "ghost8t8"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Low Drop Out Regulator with Supply Independent Current Circuit"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
