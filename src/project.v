@@ -1,12 +1,16 @@
 `default_nettype none
 
 module tt_um_ctw_ldo (
+`ifdef USE_POWER_PINS
+    inout wire VDPWR,   // Chân nguồn 1.8V (Đảm bảo tên này khớp 100% với tên trong file LEF)
+    inout wire VGND,    // Chân Mass (Đảm bảo tên này khớp 100% với tên trong file LEF)
+`endif
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
     output wire [7:0] uio_out,  // IOs: Output path
     output wire [7:0] uio_oe,   // IOs: Enable path (active high: 0=input, 1=output)
-    inout  wire [7:0] ua,       // Analog pins, only ua[5:0] can be used
+    inout  wire [7:0] ua,       // Analog pins
     input  wire       ena,      // always 1 when the design is powered, so you can ignore it
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
