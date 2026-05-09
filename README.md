@@ -1,5 +1,18 @@
 # Low Dropout Regulator (LDO) - SkyWater 130 nm
 
+## Layout Preview
+
+The completed LDO layout uses the top cell name:
+
+tt_um_ctw_ldo
+
+To inspect the physical layout and view the design layers online, open the link below:
+
+[View the LDO Layout in TinyTapeout GDS Viewer](https://gds-viewer.tinytapeout.com/?model=https://raw.githubusercontent.com/rakuichijo2001-sketch/LDO-Regulator-Skywater130nm/main/gds/tt_um_ctw_ldo.gds)
+
+This online GDS viewer helps reviewers quickly inspect the generated GDS layout without downloading the repository locally.
+
+
 ## Overview
 
 This repository presents an analog Low Dropout Regulator (LDO) designed using the SkyWater 130 nm Process Design Kit (PDK).
