@@ -45,7 +45,7 @@ pinout:
   uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: "VGND"
+  uio[0]: ""
   uio[1]: ""
   uio[2]: ""
   uio[3]: ""
