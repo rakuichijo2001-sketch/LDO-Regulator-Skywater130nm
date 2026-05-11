@@ -1,10 +1,8 @@
 `default_nettype none
 
 module tt_um_ctw_ldo (
-`ifdef USE_POWER_PINS
     inout wire VDPWR,   // Chân nguồn 1.8V (Đảm bảo tên này khớp 100% với tên trong file LEF)
     inout wire VGND,    // Chân Mass (Đảm bảo tên này khớp 100% với tên trong file LEF)
-`endif
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
